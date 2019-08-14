@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="538.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemaenterpriso.CardPaymentPageController">
+   <children>
+      <Separator layoutY="57.0" prefHeight="8.0" prefWidth="810.0" />
+      <AnchorPane prefHeight="59.0" prefWidth="819.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <Text fill="#fbfcfc" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Account" wrappingWidth="281.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="79.0" fitWidth="361.0" layoutX="209.0" layoutY="61.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Resources/Credit-Card-Visa-And-Master-Card-Transparent-PNG.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="169.0" text="Card Number" textFill="#eb07bd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cardNumberTXT" layoutX="167.0" layoutY="166.0" prefHeight="31.0" prefWidth="315.0" />
+      <Label layoutX="14.0" layoutY="222.0" text="Security Code" textFill="#eb07bd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="securityCodeTXT" layoutX="167.0" layoutY="219.0" prefHeight="31.0" prefWidth="70.0" />
+      <Line endX="717.0" layoutX="101.0" layoutY="210.0" startX="-107.0" stroke="GREY" />
+      <Label layoutX="14.0" layoutY="259.0" text="The card security code is a 3 digit number on the back of your card" textFill="BLUE" />
+      <Line endX="709.0" layoutX="108.0" layoutY="289.0" startX="-107.0" stroke="GREY" />
+      <Label layoutX="15.0" layoutY="310.0" text="Expiration Month" textFill="#eb07bd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="expirationMonthCombo" layoutX="193.0" layoutY="307.0" prefHeight="31.0" prefWidth="197.0" />
+      <Label layoutX="14.0" layoutY="369.0" text="Expiration Year" textFill="#eb07bd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="expirationYearCombo" layoutX="181.0" layoutY="369.0" prefHeight="31.0" prefWidth="197.0" />
+      <JFXButton fx:id="bookButton" layoutX="685.0" layoutY="467.0" onAction="#bookButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Book" textFill="AZURE" />
+      <JFXButton fx:id="backButton" layoutX="27.0" layoutY="467.0" onAction="#backButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Back" textFill="AZURE" />
+      <Label layoutX="625.0" layoutY="140.0" text="Total Payment: £" />
+      <Label fx:id="totalLBL" layoutX="738.0" layoutY="138.0" prefHeight="21.0" prefWidth="55.0" />
+   </children>
+</AnchorPane>

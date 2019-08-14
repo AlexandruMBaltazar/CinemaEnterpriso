@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="792.0" prefWidth="1011.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemaenterpriso.MainPageController">
+   <children>
+      <ImageView fitHeight="44.0" fitWidth="59.0" layoutX="14.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/01-1User-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="59.0" layoutX="14.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/01-1User-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="59.0" layoutX="14.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Mail_black-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="59.0" layoutX="14.0" layoutY="525.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/birthday-cake-512.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fbfcfc" layoutX="21.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Details:" wrappingWidth="151.13671875">
+         <font>
+            <Font name="Century Gothic" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="usernameLBL" layoutX="72.0" layoutY="256.0" text="Username" textFill="#fbfcfc">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="surnameLBL" layoutX="76.0" layoutY="340.0" text="Surname" textFill="#fbfcfc">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="forenameLBL" layoutX="76.0" layoutY="374.0" text="Forename" textFill="#fbfcfc">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLBL" layoutX="76.0" layoutY="443.0" text="Email" textFill="#fbfcfc">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="ageLBL" layoutX="81.0" layoutY="537.0" text="Age" textFill="#fbfcfc">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="105.0" layoutY="220.0" startX="-105.0" />
+      <Line endX="100.0" layoutX="108.0" layoutY="599.0" startX="-105.0" />
+      <JFXButton fx:id="logOutButton" layoutX="882.0" layoutY="21.0" onAction="#logOutButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Log Out" textFill="AZURE" />
+      <JFXButton fx:id="viewProfileButton" layoutX="19.0" layoutY="618.0" onAction="#viewProfileButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="View Profile" textFill="AZURE" />
+      <JFXButton fx:id="bookingsButton" layoutX="19.0" layoutY="694.0" onAction="#bookingsButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Bookings" textFill="AZURE" />
+      <ImageView fx:id="profileImage" fitHeight="163.0" fitWidth="143.0" layoutX="20.0" layoutY="21.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Resources/defautprofilepic.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fbfcfc" layoutX="319.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Cinema Enterpriso" wrappingWidth="547.13671875">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="welcomeNameTXT" fill="#fbfcfc" layoutX="494.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="141.13671875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="theatreButton" layoutX="863.0" layoutY="694.0" onAction="#theatreButtonClicked" prefHeight="36.0" prefWidth="115.0" style="-fx-background-color: #6ED9AC;" text="Select Theatre" textFill="AZURE" />
+      <ImageView fx:id="cinemaAnimationImage" fitHeight="386.0" fitWidth="544.0" layoutX="319.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Resources/cinemaGif.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="446.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemaenterpriso.SelectPaymentPageController">
+   <children>
+      <Separator layoutY="54.0" prefHeight="6.0" prefWidth="738.0" />
+      <AnchorPane layoutY="-3.0" prefHeight="59.0" prefWidth="740.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <Text fill="#fbfcfc" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Payment" wrappingWidth="281.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="payByCardButton" layoutX="276.0" layoutY="146.0" onAction="#payByCardButtonClicked" prefHeight="77.0" prefWidth="188.0" style="-fx-background-color: #6ED9AC;" text="Pay By Card" textFill="AZURE" />
+      <JFXButton fx:id="cashButton" layoutX="275.0" layoutY="280.0" onAction="#cashButtonClicked" prefHeight="77.0" prefWidth="188.0" style="-fx-background-color: #6ED9AC;" text="Cash" textFill="AZURE" />
+      <Text layoutX="15.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Payment Method:" wrappingWidth="318.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Line endX="143.0" layoutX="115.0" layoutY="103.0" startX="-100.0" />
+   </children>
+</AnchorPane>

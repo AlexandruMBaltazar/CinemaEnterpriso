@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="871.0" prefWidth="1397.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemaenterpriso.FoodShopPageController">
+   <children>
+      <ImageView fitHeight="809.0" fitWidth="1397.0" layoutY="62.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Resources/popcorn-wallpapers-hd-68880-8556378.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="62.0" prefWidth="1397.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <Text fill="#fbfcfc" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Shop" wrappingWidth="281.13671875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="backButton" layoutX="1265.0" layoutY="13.0" onAction="#backButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Back" textFill="AZURE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="121.0" opacity="0.68" prefHeight="642.0" prefWidth="1369.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="24.0" layoutY="137.0" prefHeight="38.0" prefWidth="118.0" text="Popcorn" textFill="INDIANRED">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="321.0" prefHeight="38.0" prefWidth="104.0" text="Drinks" textFill="INDIANRED">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="497.0" prefHeight="38.0" prefWidth="104.0" text="Snacks" textFill="INDIANRED" AnchorPane.topAnchor="497.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Text fill="INDIANRED" layoutX="24.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select Any Food You Want:" wrappingWidth="473.13671875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="largePopcornButton" layoutX="161.0" layoutY="112.0" mnemonicParsing="false" onAction="#largePopcornButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/popcorn-big.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="297.0" layoutY="181.0" text="Large:" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="largePopcornPriceLBL" layoutX="358.0" layoutY="183.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="578.0" layoutY="183.0" text="Medium: " textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="mediumPopcornPriceLBL" layoutX="663.0" layoutY="183.0" text="£3.5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="858.0" layoutY="183.0" text="Small:" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="smallPopcornPriceLBL" layoutX="917.0" layoutY="183.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="mediumPopcornButton" layoutX="438.0" layoutY="110.0" mnemonicParsing="false" onAction="#mediumPopcornButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/popcorn-big.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="smallPopcornButton" layoutX="721.0" layoutY="110.0" mnemonicParsing="false" onAction="#smallPopcornButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/popcorn-big.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="fantaButton" layoutX="161.0" layoutY="292.0" mnemonicParsing="false" onAction="#fantaButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/drinks-29-256.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="297.0" layoutY="361.0" text="Fanta: " textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="fantaPriceLBL" layoutX="358.0" layoutY="361.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="578.0" layoutY="363.0" text="Coke: " textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="cokePriceLBL" layoutX="629.0" layoutY="363.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="858.0" layoutY="363.0" text="Pepsi:" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="pepsiPriceLBL" layoutX="917.0" layoutY="363.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="cokeButton" layoutX="438.0" layoutY="290.0" mnemonicParsing="false" onAction="#cokeButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/food_Soda-Pepsi-Cola-Coke-Beverage-256.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="pepsiButton" layoutX="731.0" layoutY="297.0" mnemonicParsing="false" onAction="#pepsiButtonClicked" prefHeight="93.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="69.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/food-09-256.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="kitkatButton" layoutX="154.0" layoutY="469.0" mnemonicParsing="false" onAction="#kitkatButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/5ae22d4c33b73fa43b1a8939.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="290.0" layoutY="538.0" text="KitKat:" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="kitkatPriceLBL" layoutX="355.0" layoutY="538.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="578.0" layoutY="538.0" text="M&amp;M:" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="mmPriceLBL" layoutX="642.0" layoutY="538.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="851.0" layoutY="540.0" text="Haribo:" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="hariboPriceLBL" layoutX="930.0" layoutY="540.0" text="£5" textFill="AZURE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="mmButton" layoutX="438.0" layoutY="470.0" mnemonicParsing="false" onAction="#mmButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/58a7a3115ad0fd0b7fdd33d7.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="hariboButton" layoutX="721.0" layoutY="470.0" mnemonicParsing="false" onAction="#hariboButtonClicked" prefHeight="89.0" prefWidth="118.0">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/haribo-logo-png-3.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <AnchorPane layoutX="1027.0" layoutY="55.0" prefHeight="545.0" prefWidth="309.0" style="-fx-border-color: #6ED9AC;">
+               <children>
+                  <Label layoutX="113.0" layoutY="14.0" prefHeight="35.0" prefWidth="83.0" text="Basket" textFill="#6ed9ac">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="75.0" prefHeight="28.0" prefWidth="80.0" text="Tickets:" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="largePopcornQuantityLBL" layoutX="153.0" layoutY="133.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="133.0" prefHeight="28.0" prefWidth="98.0" text="Popcorn:" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="133.0" prefHeight="28.0" prefWidth="54.0" text="Large" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mediumPopcornQuantityLBL" layoutX="175.0" layoutY="168.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="168.0" prefHeight="28.0" prefWidth="80.0" text="Medium" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="smallPopcornQuantityLBL" layoutX="153.0" layoutY="197.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="197.0" prefHeight="28.0" prefWidth="54.0" text="Small" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fantaQuantityLBL" layoutX="148.0" layoutY="245.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="245.0" prefHeight="28.0" prefWidth="80.0" text="Drinks:" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="245.0" prefHeight="28.0" prefWidth="54.0" text="Fanta" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cokeQuantityLBL" layoutX="142.0" layoutY="280.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="280.0" prefHeight="28.0" prefWidth="80.0" text="Coke" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pepsiQuantityLBL" layoutX="148.0" layoutY="309.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="309.0" prefHeight="28.0" prefWidth="54.0" text="Pepsi" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="kitkatQuantityLBL" layoutX="150.0" layoutY="366.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="366.0" prefHeight="28.0" prefWidth="80.0" text="Snacks" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="366.0" prefHeight="28.0" prefWidth="68.0" text="KitKat" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="mmQuantityLBL" layoutX="143.0" layoutY="401.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="401.0" prefHeight="28.0" prefWidth="80.0" text="M&amp;M" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hariboQuantityLBL" layoutX="158.0" layoutY="430.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="430.0" prefHeight="28.0" prefWidth="70.0" text="Haribo" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ticketsQuantityLBL" layoutX="89.0" layoutY="75.0" prefHeight="28.0" prefWidth="49.0" text="(0)" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="191.0" layoutY="499.0" prefHeight="28.0" prefWidth="83.0" text="Total: £" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalLBL" layoutX="261.0" layoutY="499.0" prefHeight="28.0" prefWidth="54.0" text="40" textFill="AZURE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="paymentButton" layoutX="613.0" layoutY="774.0" onAction="#paymentButtonClicked" prefHeight="83.0" prefWidth="270.0" style="-fx-background-color: #6ED9AC;" text="Go To Payment" textFill="AZURE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

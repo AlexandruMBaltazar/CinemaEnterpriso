@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="844.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemaenterpriso.TheatreSelectionPageController">
+   <children>
+      <Separator layoutY="70.0" prefHeight="0.0" prefWidth="1270.0" />
+      <AnchorPane layoutY="-1.0" prefHeight="70.0" prefWidth="1270.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <Text fill="#fbfcfc" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Theatre Select" wrappingWidth="172.13671875">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="dayComboBox" layoutX="1030.0" layoutY="19.0" onAction="#dayComboBoxClicked" prefHeight="31.0" prefWidth="202.0" promptText="Select Week" />
+         </children>
+      </AnchorPane>
+      <Separator layoutY="783.0" prefHeight="3.0" prefWidth="1270.0" />
+      <TableView fx:id="theatreTable" layoutY="69.0" prefHeight="717.0" prefWidth="1270.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="324.0" text="Name" />
+          <TableColumn fx:id="locationColumn" prefWidth="280.0" text="Location" />
+            <TableColumn fx:id="noSeatsColumn" prefWidth="110.0" text="No. Seats" />
+            <TableColumn fx:id="movieNameColumn" prefWidth="362.0" text="Movie Name" />
+            <TableColumn fx:id="priceColumn" text="Price" />
+            <TableColumn fx:id="ageColumn" prefWidth="113.0" text="Age" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutY="785.0" prefHeight="79.0" prefWidth="1270.0" style="-fx-background-color: #2A363F;">
+         <children>
+            <JFXButton fx:id="backButton" layoutX="14.0" layoutY="22.0" onAction="#backButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Back" textFill="AZURE" />
+            <JFXButton fx:id="nextButton" layoutX="1139.0" layoutY="22.0" onAction="#nextButtonClicked" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #6ED9AC;" text="Next" textFill="AZURE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="719.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemaenterpriso.LogInController">
+   <children>
+      <Pane layoutX="45.0" layoutY="73.0" prefHeight="310.0" prefWidth="301.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fbfcfc" layoutX="41.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinema Enterpriso" wrappingWidth="219.13671875">
+               <font>
+                  <Font name="Century Gothic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Line endX="170.0" layoutX="325.0" layoutY="202.0" rotate="90.0" startX="-100.0" />
+      <JFXTextField fx:id="usernameTXT" labelFloat="true" layoutX="452.0" layoutY="108.0" prefHeight="25.0" prefWidth="206.0" promptText="Username" style="-fx-text-fill: azure; -fx-prompt-text-fill: azure;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordTXT" labelFloat="true" layoutX="452.0" layoutY="202.0" prefHeight="25.0" prefWidth="206.0" promptText="Password" style="-fx-text-fill: azure; -fx-prompt-text-fill: azure;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="registerButton" layoutX="407.0" layoutY="290.0" onAction="#registerButtonClicked" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #6ED9AC;" text="Register" textFill="AZURE" />
+      <JFXButton fx:id="logInButton" layoutX="613.0" layoutY="290.0" onAction="#logInButtonClicked" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #6ED9AC;" text="Log In" textFill="AZURE" />
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="384.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/01-1User-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="384.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/lock-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
